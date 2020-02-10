@@ -1,6 +1,6 @@
-# use-marked-hook
+# useMarked() hook
 
-> A react hook for Marked.js
+> A react hook for Marked.js with sanitize-html
 
 [![NPM](https://img.shields.io/npm/v/use-marked-hook.svg)](https://www.npmjs.com/package/use-marked-hook) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -13,7 +13,7 @@ yarn add use-marked-hook
 ## Usage
 
 ```jsx
-import React, { Component } from "react";
+import React from "react";
 
 import { useMarked } from "use-marked-hook";
 

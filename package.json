@@ -1,9 +1,10 @@
 {
   "name": "use-marked-hook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react hook for Marked.js",
   "author": "Filipe Herculano",
   "license": "MIT",
+  "homepage": "https://this-fifo.github.io/use-marked-hook/",
   "repository": {
     "type": "git",
     "url": "https://github.com/this-fifo/use-marked-hook.git"
