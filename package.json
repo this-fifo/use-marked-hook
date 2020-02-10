@@ -2,9 +2,20 @@
   "name": "use-marked-hook",
   "version": "1.0.0",
   "description": "A react hook for Marked.js",
-  "author": "this-fifo",
+  "author": "Filipe Herculano",
   "license": "MIT",
-  "repository": "this-fifo/use-marked-hook",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/this-fifo/use-marked-hook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/this-fifo/use-marked-hook/issues"
+  },
+  "keywords": [
+    "hooks",
+    "markdown",
+    "react"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -66,5 +77,9 @@
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-url": "^2.1.0"
+  },
+  "dependencies": {
+    "marked": "^0.8.0",
+    "sanitize-html": "^1.21.1"
   }
 }

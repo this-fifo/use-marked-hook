@@ -7,28 +7,25 @@
 ## Install
 
 ```bash
-npm install --save use-marked-hook
+yarn add use-marked-hook
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import { useMyHook } from 'use-marked-hook'
+import { useMarked } from "use-marked-hook";
 
 const Example = () => {
-  const example = useMyHook()
-  return (
-    <div>{example}</div>
-  )
-}
+  const markdown = `**bold content**`;
+  const html = useMarked(markdown); // html -> <p></strong>bold content</strong></p>
+  return <div dangerouslySetInnerHTML={{ __html: html }} />;
+};
 ```
 
 ## License
 
-MIT © [this-fifo](https://github.com/this-fifo)
+MIT © [Filipe Herculano](https://github.com/this-fifo)
 
 ---
-
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
