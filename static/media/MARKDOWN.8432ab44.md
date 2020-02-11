@@ -1,8 +1,10 @@
 ## useMarked() hook
 
-> A simple wrapper of marked and sanitize-html for your custom needs
+> A custom react hook of marked and sanitize-html, view the [source](https://github.com/this-fifo/use-marked-hook/blob/master/src/index.js)
 
-_This page was rendered with [useMarked()](https://github.com/this-fifo/use-marked-hook) styles from [Bahunya](https://github.com/Kimeiga/bahunya) and syntax highlighting by [Prism](https://prismjs.com/)_
+**This page content was rendered by React with [useMarked()](https://github.com/this-fifo/use-marked-hook) from a markdown file**
+
+<u>CSS styles from [Bahunya](https://github.com/Kimeiga/bahunya) and syntax highlighting by [Prism](https://prismjs.com/)</u>
 
 ### How it works
 
@@ -18,33 +20,35 @@ That's it.
 import React, { useEffect, useState } from "react";
 import { useMarked } from "use-marked-hook";
 import Prism from "prismjs";
-import demo from "./demo.md";
-
-const markedOptions = {
-  highlight: code => {
-    return Prism.highlight(code, Prism.languages.javascript, "javascript");
-  }
-};
+import MARKDOWN from "./MARKDOWN.md";
 
 const App = () => {
   const [content, setContent] = useState("");
+
+  const markedOptions = {
+    highlight: code =>
+      Prism.highlight(code, Prism.languages.javascript, "javascript")
+  };
   const html = {
     __html: useMarked(content, { skipSanitize: true, markedOptions })
   };
+
   const getMarkdown = () => {
-    fetch(demo)
+    fetch(MARKDOWN)
       .then(res => res.text())
       .then(setContent);
   };
+
   useEffect(() => {
     getMarkdown();
   }, []);
-  return content ? <div dangerouslySetInnerHTML={html} /> : <></>;
+
+  return <div dangerouslySetInnerHTML={html} />;
 };
 export default App;
 ```
 
-### Aditional Configuration
+#### Aditional Configuration
 
 You can pass an optional `options` object for configuring useMarked(), this is the default provided
 
