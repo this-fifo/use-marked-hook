@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import sanitizeHTML from 'sanitize-html';
-import marked from 'marked';
+import { useState, useEffect } from 'react'
+import sanitizeHTML from 'sanitize-html'
+import marked from 'marked'
 
 import defaultOptions from './defaultOptions'
 

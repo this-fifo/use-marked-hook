@@ -1,7 +1,7 @@
 {
   "name": "use-marked-hook",
-  "version": "1.0.1",
-  "description": "A react hook for Marked.js",
+  "version": "1.0.2",
+  "description": "A react hook for parsing markdown with marked and sanitize-html",
   "author": "Filipe Herculano",
   "license": "MIT",
   "homepage": "https://this-fifo.github.io/use-marked-hook/",
