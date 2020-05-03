@@ -1,6 +1,6 @@
 {
   "name": "use-marked-hook",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A react hook for parsing markdown with marked and sanitize-html",
   "author": "Filipe Herculano",
   "license": "MIT",
@@ -70,7 +70,7 @@
     "eslint-plugin-standard": "^3.1.0",
     "gh-pages": "^2.0.1",
     "react": "^16.9.0",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^3.4.1",
     "react-test-renderer": "^16.9.0",
     "rollup": "^1.1.2",
     "rollup-plugin-babel": "^4.3.2",
@@ -80,7 +80,7 @@
     "rollup-plugin-url": "^2.1.0"
   },
   "dependencies": {
-    "marked": "^0.8.0",
+    "marked": "^1.0.0",
     "sanitize-html": "^1.21.1"
   }
 }
